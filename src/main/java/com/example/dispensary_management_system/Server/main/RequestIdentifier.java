@@ -95,6 +95,8 @@ public class RequestIdentifier implements Runnable{
         //Remove the OOS after disconnection
         System.out.println(userID + " disconnected");
         Server.socketArrayList.removeIf(r -> {
+
+            /**Any of staff or patient by userId disconnects */
             if(r.getRegistrationNumber().equals(userID)) {
                 try {
                     System.out.println("Sending disconnected to their oos");
