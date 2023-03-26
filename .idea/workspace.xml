@@ -5,47 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="000a8a88-b0dc-4da6-83ea-2c88f12070c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/controller/ProfileScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/entity/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/fxml/Login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/fxml/ProfileScreen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/fxml/Register.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/request/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/request/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/response/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/response/RegisterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/response/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/util/GuiUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/util/HashUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/main/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/request/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/requestHandler/LoginRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/requestHandler/RegisterRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/requestHandler/RequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/dispensary_management_system/hello-view.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OOPS/OOPS.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OOPS/src/Calculator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../client-server-architecture/client-server-architecture.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/DatabaseConnection.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../dummy/dummy.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../javaLit/src/Images/image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/requestHandler/LoginRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/requestHandler/LoginRequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dashboard/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dashboard/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dashboard/.idea/encodings.xml" beforeDir="false" />
