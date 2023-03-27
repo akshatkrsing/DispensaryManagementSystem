@@ -1,8 +1,10 @@
 package com.example.dispensary_management_system.Server.main;
 
 import com.example.dispensary_management_system.Server.entity.RegistrationStreamWrapper;
+import com.example.dispensary_management_system.Server.request.GetNotificationRequest;
 import com.example.dispensary_management_system.Server.request.LoginRequest;
 import com.example.dispensary_management_system.Server.request.RegisterRequest;
+import com.example.dispensary_management_system.Server.requestHandler.GetNotificationRequestHandler;
 import com.example.dispensary_management_system.Server.requestHandler.LoginRequestHandler;
 import com.example.dispensary_management_system.Server.requestHandler.RegisterRequestHandler;
 
@@ -83,6 +85,9 @@ public class RequestIdentifier implements Runnable{
             } else if (request instanceof RegisterRequest) {
                 RegisterRequestHandler registerRequestHandler = new RegisterRequestHandler((RegisterRequest) request, oos, Server.getConnection());
                 registerRequestHandler.sendResponse(userID);
+            }else if(request instanceof GetNotificationRequest){
+                GetNotificationRequestHandler getNotificationRequestHandler=new GetNotificationRequestHandler(Server.getConnection(), oos);
+                getNotificationRequestHandler.sendResponse(userID);
             }
 
         }

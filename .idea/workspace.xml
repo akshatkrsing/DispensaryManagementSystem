@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="000a8a88-b0dc-4da6-83ea-2c88f12070c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/util/RandomString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/controller/SingleNotificationCardFXMLController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/css/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/entity/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/entity/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/request/GetNotificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/response/GetNotificationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/entity/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/entity/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/request/GetNotificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/requestHandler/GetNotificationRequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/response/GetNotificationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/table/MessageTable.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OOPS/OOPS.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OOPS/src/Calculator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../client-server-architecture/client-server-architecture.iml" afterDir="false" />
@@ -13,8 +24,10 @@
       <change afterPath="$PROJECT_DIR$/../dummy/dummy.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../javaLit/src/Images/image.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/controller/ProfileScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/controller/ProfileScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/fxml/ProfileScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Patient/fxml/ProfileScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/main/RequestIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/main/RequestIdentifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/main/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/main/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dashboard/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dashboard/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dashboard/.idea/encodings.xml" beforeDir="false" />
