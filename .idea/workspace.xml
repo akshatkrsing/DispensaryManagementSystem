@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="000a8a88-b0dc-4da6-83ea-2c88f12070c7" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Server/util/SendNotification.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dispensary_management_system/Staff/.gitkeep" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OOPS/OOPS.iml" afterDir="false" />
@@ -27,6 +28,9 @@
       <change beforePath="$PROJECT_DIR$/../dashboard/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/module-info.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/DispensaryManagementSystem" beforeDir="false" afterPath="$PROJECT_DIR$/DispensaryManagementSystem" afterDir="false" />
+>>>>>>> df1f7a9cdc6758f084e31ca85ce51c02c49e4b96
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
