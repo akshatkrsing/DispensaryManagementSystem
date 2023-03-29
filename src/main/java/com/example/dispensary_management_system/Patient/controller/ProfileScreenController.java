@@ -47,12 +47,13 @@ public class ProfileScreenController {
                 singleNotificationCardFXMLController.courseLabel.setText(notification.getCourseName());
                 singleNotificationCardFXMLController.messageLabel.setText(notification.getText());
                 singleNotificationCardFXMLController.timestampLabel.setText(notification.getSentAt().toString());
-                notificationContainer.getChildren().add(node);
+                notificationContainer.getChildren().add((javafx.scene.Node) node);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
+
 
 
 
