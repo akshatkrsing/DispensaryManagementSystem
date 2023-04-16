@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="doctorDutyTime" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="650.0" style="-fx-background-color: #b7eff7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="nameOfDoctor" alignment="TOP_LEFT" layoutX="45.0" prefHeight="38.0" prefWidth="203.0" style="-fx-border-color: #db69f5;" text="Name Of Doctor's">
+         <font>
+            <Font name="ArtifaktElement-Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="slNo" alignment="TOP_LEFT" prefHeight="38.0" prefWidth="45.0" style="-fx-border-color: #db69f5;" text="Sl. No">
+         <font>
+            <Font name="ArtifaktElement-Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="doctorMobileNo" alignment="TOP_LEFT" layoutX="448.0" prefHeight="38.0" prefWidth="203.0" style="-fx-border-color: #db69f5;" text="Mobile No">
+         <font>
+            <Font name="ArtifaktElement-Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="doctorDutyTime" alignment="TOP_LEFT" layoutX="248.0" prefHeight="38.0" prefWidth="200.0" style="-fx-border-color: #db69f5;" text="Duty Time">
+         <font>
+            <Font name="ArtifaktElement-Regular" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

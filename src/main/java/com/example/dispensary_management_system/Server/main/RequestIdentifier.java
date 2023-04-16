@@ -1,12 +1,8 @@
 package com.example.dispensary_management_system.Server.main;
 
 import com.example.dispensary_management_system.Server.entity.RegistrationStreamWrapper;
-import com.example.dispensary_management_system.Server.request.GetNotificationRequest;
-import com.example.dispensary_management_system.Server.request.LoginRequest;
-import com.example.dispensary_management_system.Server.request.RegisterRequest;
-import com.example.dispensary_management_system.Server.requestHandler.GetNotificationRequestHandler;
-import com.example.dispensary_management_system.Server.requestHandler.LoginRequestHandler;
-import com.example.dispensary_management_system.Server.requestHandler.RegisterRequestHandler;
+import com.example.dispensary_management_system.Server.request.*;
+import com.example.dispensary_management_system.Server.requestHandler.*;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -89,6 +85,39 @@ public class RequestIdentifier implements Runnable{
                 GetNotificationRequestHandler getNotificationRequestHandler=new GetNotificationRequestHandler(Server.getConnection(), oos);
                 getNotificationRequestHandler.sendResponse(userID);
             }
+            else if( request instanceof GetProfilePicRequest){
+                GetProfilePicRequestHandler getProfilePicRequestHandler=new GetProfilePicRequestHandler(Server.getConnection(),oos,(GetProfilePicRequest)request);
+                getProfilePicRequestHandler.sendResponse(userID);
+            }
+            else if (request instanceof ChangeProfilePicRequest){
+                ChangeProfilePicRequestHandler changeProfilePicRequestHandler=new ChangeProfilePicRequestHandler(Server.getConnection(),oos,(ChangeProfilePicRequest)request);
+                changeProfilePicRequestHandler.sendResponse(userID);
+            }
+            else if(request instanceof ChangePasswordRequest){
+                ChangePasswordRequestHandler changePasswordRequestHandler=new ChangePasswordRequestHandler(Server.getConnection(),oos,(ChangePasswordRequest)request);
+                changePasswordRequestHandler.sendResponse(userID);
+            }
+            else if(request instanceof LogOutRequest){
+                LogOutRequestHandler logOutRequestHandler=new LogOutRequestHandler(Server.getConnection(),oos);
+                logOutRequestHandler.sendResponse(userID);
+                deleteChatSocketConnection();
+            }
+            else if(request instanceof AppointmentListRequest){
+                AppointmentListRequestHandler appointmentListRequestHandler = new AppointmentListRequestHandler(Server.getConnection(),oos);
+                appointmentListRequestHandler.sendResponse(userID);
+            }
+            else if(request instanceof BookAppointmentRequest){
+                BookAppointmentRequestHandler bookAppointmentRequestHandler = new BookAppointmentRequestHandler(Server.getConnection(),oos,(BookAppointmentRequest) request);
+                bookAppointmentRequestHandler.sendResponse(userID);
+            }
+            else if(request instanceof BulletinRequest){
+                BulletinRequestHandler bulletinRequestHandler = new BulletinRequestHandler(Server.getConnection(),oos);
+                bulletinRequestHandler.sendResponse(userID);
+            }
+            else if(request instanceof DutyChartRequest){
+                DutyChartRequestHandler dutyChartRequestHandler =  new DutyChartRequestHandler(Server.getConnection(),oos);
+                dutyChartRequestHandler.sendResponse(userID);
+            }
 
         }
 
@@ -113,17 +142,18 @@ public class RequestIdentifier implements Runnable{
             }
             return false;
         });
-        Server.staffSocketArrayList.removeIf(r-> {
-            if(r.getStaffId().equals(userID)) {
-                try {
-                    System.out.println("Sending disconnected to their oos");
-                    r.getOos().writeObject("disconnected");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                return true;
-            }
-            return false;
-        });
+        /***delete chat for staff***/
+//        Server.staffSocketArrayList.removeIf(r-> {
+//            if(r.getStaffId().equals(userID)) {
+//                try {
+//                    System.out.println("Sending disconnected to their oos");
+//                    r.getOos().writeObject("disconnected");
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//                return true;
+//            }
+//            return false;
+//        });
     }
 }

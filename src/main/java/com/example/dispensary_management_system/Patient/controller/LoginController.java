@@ -70,7 +70,7 @@ public class LoginController implements Initializable{
             Main.userFullName = response.getFirstName() + " " + response.getLastName();
             ProfileScreenController profileScreenController=homepageLoader.getController();
             profileScreenController.first(response.getFirstName()+" "+response.getLastName());
-
+            profileScreenController.beforeAppointmentPage();
 
         }
 
