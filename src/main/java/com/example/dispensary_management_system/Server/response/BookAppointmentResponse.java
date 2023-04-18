@@ -1,7 +1,7 @@
 package com.example.dispensary_management_system.Server.response;
 
 public class BookAppointmentResponse extends Response{
-    private String response;
+    private String response = "Failure";
     public BookAppointmentResponse(String response){
         this.response =response;
     }

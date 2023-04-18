@@ -26,6 +26,7 @@ public class DutyChartRequestHandler extends RequestHandler{
         try{
             PreparedStatement preparedStatement = connection.prepareStatement();
             preparedStatement.setString(1,userID);
+           
             System.out.println(preparedStatement);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){

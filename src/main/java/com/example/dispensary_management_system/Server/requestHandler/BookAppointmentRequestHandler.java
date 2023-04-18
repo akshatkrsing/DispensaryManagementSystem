@@ -4,6 +4,7 @@ package com.example.dispensary_management_system.Server.requestHandler;
 
 import com.example.dispensary_management_system.Server.request.BookAppointmentRequest;
 import com.example.dispensary_management_system.Server.response.BookAppointmentResponse;
+import com.example.dispensary_management_system.Server.table.BookAppointmentTable;
 
 
 import java.io.IOException;
@@ -27,8 +28,11 @@ public class BookAppointmentRequestHandler extends RequestHandler{
     public void sendResponse(String userID) {
         int result = 0;
         try {
-            PreparedStatement preparedStatement=connection.prepareStatement();
+            PreparedStatement preparedStatement=connection.prepareStatement(BookAppointmentTable.QUERY_INSERT_APPOINTMENT);
             preparedStatement.setInt(1,Integer.parseInt(userID));
+            preparedStatement.setString(2,bookAppointmentRequest.getFromTime());
+            preparedStatement.setString(3, bookAppointmentRequest.getToTime());
+            preparedStatement.setString(4,bookAppointmentRequest.getMemo());
             result=preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

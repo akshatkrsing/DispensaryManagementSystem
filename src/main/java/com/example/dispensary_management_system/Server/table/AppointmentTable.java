@@ -12,4 +12,6 @@ public class AppointmentTable {
     public static final String APPOINTMENT_FROM_TIME= "fromTime";
     public static final String APPOINTMENT_TO_TIME = "toTime";
     public static final String QUERY_FETCH_APPOINTMENTS = "SELECT * FROM "+TABLE_NAME+" WHERE "+COLUMN_REGISTRATION_NUMBER+" =?;";
+
+
 }

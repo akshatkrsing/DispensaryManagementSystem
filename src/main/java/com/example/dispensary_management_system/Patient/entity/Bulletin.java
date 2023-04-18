@@ -1,10 +1,17 @@
 package com.example.dispensary_management_system.Patient.entity;
 
 
+import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.control.Tab;
 import javafx.scene.image.Image;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.Serializable;
+import java.sql.Blob;
+import java.sql.SQLException;
 import java.sql.Timestamp;
 
 public class Bulletin implements Serializable {
@@ -13,8 +20,16 @@ public class Bulletin implements Serializable {
     private String caption;
     private Timestamp timestamp;
     private String topic;
-    public Bulletin(Image image,String caption,Timestamp timestamp,String topic){
-        this.image = image;
+    public Bulletin(Blob image, String caption, Timestamp timestamp, String topic){
+        try {
+            InputStream in = image.getBinaryStream();
+            final BufferedImage bufferedImage = ImageIO.read(in);
+            this.image = SwingFXUtils.toFXImage(bufferedImage,null);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         this.caption = caption;
         this.timestamp = timestamp;
         this.topic  = topic;

@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="224.0" styleClass="#a925f5" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="224.0" styleClass="#a925f5" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dispensary_management_system.Patient.controller.BulletinController">
    <children>
       <VBox prefHeight="224.0" prefWidth="224.0" style="-fx-background-color: #88f05b#88f05b; -fx-border-color: #a925f5;">
          <children>

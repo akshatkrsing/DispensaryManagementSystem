@@ -28,7 +28,7 @@ public class BulletinController implements Initializable {
 
     }
 
-    public void onViewCaption(ActionEvent actionEvent){
+    public void onViewCaption(javafx.event.ActionEvent actionEvent) {
         JOptionPane.showMessageDialog(null,bulletinCaption.getText());
     }
 }

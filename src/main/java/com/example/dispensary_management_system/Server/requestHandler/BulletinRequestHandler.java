@@ -2,6 +2,7 @@ package com.example.dispensary_management_system.Server.requestHandler;
 
 import com.example.dispensary_management_system.Server.entity.Bulletin;
 import com.example.dispensary_management_system.Server.response.BulletinResponse;
+import com.example.dispensary_management_system.Server.table.BulletinTable;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -22,13 +23,16 @@ public class BulletinRequestHandler extends RequestHandler{
     public void sendResponse(String userID) {
         ArrayList<Bulletin> bulletinArrayList = new ArrayList<>();
         try{
-            PreparedStatement preparedStatement = connection.prepareStatement();
-            preparedStatement.setString(1,userID);
+            PreparedStatement preparedStatement = connection.prepareStatement(BulletinTable.QUERY_FETCH_BULLETIN);
             System.out.println(preparedStatement);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
+
                 bulletinArrayList.add(
-                        new Bulletin()
+                        new Bulletin(resultSet.getBlob(BulletinTable.IMAGE_BLOB),
+                                resultSet.getString(BulletinTable.BULLETIN_CAPTION),
+                                resultSet.getTimestamp(BulletinTable.BULLETIN_TIMESTAMP),
+                                resultSet.getString(BulletinTable.BULLETIN_TOPIC))
                 );
             }
             oos.writeObject(new BulletinResponse(bulletinArrayList));

@@ -278,6 +278,10 @@ public class ProfileScreenController implements Initializable {
         }
     }
 
+    /****
+     ******
+     **********
+     */
     @FXML
     private VBox dutyChartVBox;
     @FXML
