@@ -19,7 +19,7 @@ public class Server {
     private static RandomString randomString;
 
     public static ArrayList<RegistrationStreamWrapper> socketArrayList=new ArrayList<>();
-    public static ArrayList<StaffIdStreamWrapper> teacherSocketArrayList=new ArrayList<>();
+
 
     public static void main(String[] args) {
         //Declaring sockets
